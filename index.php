@@ -46,7 +46,17 @@ $extract = substr($post, 0, 20);
 echo "$extract... [ver más]";
 */
 
+/*
 $data = 'javaScript, php, laravel'; // campo tags
 $tags = explode(', ', $data); // array
 echo "<pre>";
 var_dump($tags);
+*/
+
+$courses = ['javaScript', 'php', 'laravel'];
+echo implode(', ', $courses);
+
+$course = "    curso de PHP    ";
+$course = trim($course); // Elimina los espacios ltrim-rtrim
+echo "<pre>";
+echo "Quiero aprender $course, y otro texto";
