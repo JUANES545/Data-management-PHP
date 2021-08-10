@@ -72,3 +72,17 @@ echo "<pre>";
 // Reemplazar
 $slug = str_replace(' ','-', $text); //reemplaza espacios por -
 echo strtolower($slug);
+
+// Modificación
+$code = 39;
+echo str_pad($code, 8, '#'); //llena un espacio de caracteres con #
+echo "<br>";
+echo str_pad($code, 8, '#',STR_PAD_BOTH);
+echo "<pre>";
+
+echo strip_tags($text); // Elimina etiquetas de HTML
+echo "<br>";
+
+$text2 = "PHP es UN LENGUAJE, año 2020, programación<br>";
+echo strtoupper($text2); // monobyte - sin caracteres especiales
+echo mb_strtoupper($text2); // multibyte
