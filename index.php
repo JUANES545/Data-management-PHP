@@ -59,4 +59,16 @@ echo implode(', ', $courses);
 $course = "    curso de PHP    ";
 $course = trim($course); // Elimina los espacios ltrim-rtrim
 echo "<pre>";
-echo "Quiero aprender $course, y otro texto";
+echo "Quiero aprender $course, y otro texto <br>";
+
+// Alterar
+$text = "PHP es UN LENGUAJE<br>"; // slug
+echo strtoupper($text); //capital - ordinal letters
+echo strtolower($text);
+echo ucfirst($text); //first Capital
+echo lcfirst($text); //first Lower
+echo "<pre>";
+
+// Reemplazar
+$slug = str_replace(' ','-', $text); //reemplaza espacios por -
+echo strtolower($slug);
