@@ -4,7 +4,7 @@ use App\Validate;
 
 class ValidateTest extends TestCase{
     public function test_email(){
-        $email = Validate::email('i@rimorsoft.com');
+        $email = Validate::email('illyaB@rimorsoft.com');
         $this->assertTrue($email);
     }
 }
